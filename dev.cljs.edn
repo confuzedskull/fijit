@@ -1,0 +1,12 @@
+; In order for the cljs REPL to load a browser must be opened.
+; This will hang if you're operating in a headless environment.
+; Uncomment the configuration for your system.
+
+; Ubuntu
+;^{:launch-js ["/opt/google/chrome/chrome" "--headless" "--disable-gpu" "--repl" "--disable-dev-shm" :open-url]}
+
+; Raspberry Pi
+;^{:launch-js ["/usr/bin/chromium-browser" "--headless" "--disable-gpu" "--repl"]}
+
+{:main fijit.core
+ :warnings {:munged-namespace false}}; warning is thrown for fijit.interface since "interface" is reserved
