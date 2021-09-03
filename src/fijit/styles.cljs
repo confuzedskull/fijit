@@ -10,3 +10,9 @@
 
 (def p {:color "white"
         :background-color "gray"})
+
+(def button {:background-color "white"})
+
+(def send-button {:color "red"})
+
+(def receive-button {:color "green"})
