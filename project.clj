@@ -1,4 +1,4 @@
-(defproject fijit "1.0.0"
+(defproject fijit "1.0.1"
   :cljsbuild {:builds
               [{:compiler {:optimizations :advanced
                            :output-to "bin/main.js"
