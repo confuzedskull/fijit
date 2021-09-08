@@ -9,12 +9,13 @@
                  :on-click c}
                 (style css/button (first s)))])
 
-(defn text-input [p v & t]
-  [:input {:type (or t "text")
-           :placeholder p
-           :value @v
-           :on-change #(reset! v
-                               (-> % .-target .-value))}])
+(defn text-input [p v & [t s]]
+  [:input (conj {:type (or t "text")
+                 :placeholder p
+                 :value @v
+                 :on-change #(reset! v
+                                    (-> % .-target .-value))}
+                (style css/text-input s))])
 
 (defn send []
   [button txt/send-button
