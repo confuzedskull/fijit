@@ -13,6 +13,8 @@
 
 (def button {:background-color "white"})
 
+(def text-input {:color "blue"})
+
 (def send-button {:color "red"})
 
 (def receive-button {:color "green"})
