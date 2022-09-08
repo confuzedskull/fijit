@@ -14,4 +14,5 @@
                  [reagent "1.1.0"]]
   :plugins [[lein-cljsbuild "1.1.8"]]
   :resource-paths ["target"]
-  :aliases {"figwheel" ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]})
+  :aliases {"debug" ["trampoline" "run" "-m" "figwheel.main" "-b" "dev" "-r"]
+            "release" ["cljsbuild" "once"]})
