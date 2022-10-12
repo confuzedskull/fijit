@@ -10,4 +10,5 @@
                  [reagent "1.1.1"]]
   :resource-paths ["target"]
   :aliases {"debug" ["trampoline" "run" "-m" "figwheel.main" "-b" "debug" "-r"]
-            "release" ["run" "-m" "figwheel.main" "-bo" "release"]})
+            "release" ["run" "-m" "figwheel.main" "-bo" "release"]
+            "test"  ["run" "-m" "figwheel.main" "-co" "test.cljs.edn" "-m" "fijit.test-runner"]})
