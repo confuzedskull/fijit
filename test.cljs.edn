@@ -8,4 +8,7 @@
 ; Raspberry Pi
 ;^{:launch-js ["/usr/bin/chromium-browser" "--headless" "--disable-gpu" "--repl"]}
 
+; Mac
+;^{:launch-js ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" "--headless" "--disable-gpu" "--repl" :open-url]}
+
 {:main fijit.test-runner}

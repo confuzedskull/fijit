@@ -8,5 +8,8 @@
 ; Raspberry Pi
 ;^{:launch-js ["/usr/bin/chromium-browser" "--headless" "--disable-gpu" "--repl"]}
 
+; Mac
+;^{:launch-js ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" "--headless" "--disable-gpu" "--repl" :open-url]}
+
 {:main fijit.core
  :warnings {:munged-namespace false}}; warning is thrown for fijit.interface since "interface" is reserved
